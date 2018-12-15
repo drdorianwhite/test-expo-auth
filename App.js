@@ -2,8 +2,13 @@ import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
+import Amplify from "aws-amplify";
+import amplify from "./aws-exports";
+import { withAuthenticator, AmplifyTheme } from "aws-amplify-react-native";
 
-export default class App extends React.Component {
+Amplify.configure(amplify);
+
+class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
@@ -53,6 +58,10 @@ export default class App extends React.Component {
     this.setState({ isLoadingComplete: true });
   };
 }
+const MySectionHeader = Object.assign({}, AmplifyTheme.sectionHeader, { background: 'orange' });
+const MyTheme = Object.assign({}, AmplifyTheme, { sectionHeader: MySectionHeader });
+
+export default withAuthenticator(App)//, false, [], null, MyTheme );
 
 const styles = StyleSheet.create({
   container: {
