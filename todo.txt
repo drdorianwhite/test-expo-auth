@@ -1,0 +1,20 @@
+Create components:
+    a) login status
+    b) login
+    c) register
+    d) report period selector
+    e) reports list (with totals)
+    f) report detail container
+        f1) detail controls
+        f2) chart
+        f3) table
+        f4) report title
+    g) report detail
+
+create admin tables:
+    1) user
+    2) user-types
+    3) store-owner
+    4) payments
+    5) subscription-status
+    6) migration-status

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
-import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
+import React from "react";
+import { Platform, StatusBar, StyleSheet, View } from "react-native";
+import { AppLoading, Asset, Font, Icon } from "expo";
+import AppNavigator from "./navigation/AppNavigator";
 import Amplify from "aws-amplify";
 import amplify from "./aws-exports";
 import { withAuthenticator, AmplifyTheme } from "aws-amplify-react-native";
@@ -10,7 +10,7 @@ Amplify.configure(amplify);
 
 class App extends React.Component {
   state = {
-    isLoadingComplete: false,
+    isLoadingComplete: false
   };
 
   render() {
@@ -25,7 +25,7 @@ class App extends React.Component {
     } else {
       return (
         <View style={styles.container}>
-          {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
+          {Platform.OS === "ios" && <StatusBar barStyle="default" />}
           <AppNavigator />
         </View>
       );
@@ -35,16 +35,16 @@ class App extends React.Component {
   _loadResourcesAsync = async () => {
     return Promise.all([
       Asset.loadAsync([
-        require('./assets/images/robot-dev.png'),
-        require('./assets/images/robot-prod.png'),
+        require("./assets/images/robot-dev.png"),
+        require("./assets/images/robot-prod.png")
       ]),
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         ...Icon.Ionicons.font,
         // We include SpaceMono because we use it in HomeScreen.js. Feel free
         // to remove this if you are not using it in your app
-        'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-      }),
+        "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
+      })
     ]);
   };
 
@@ -58,14 +58,18 @@ class App extends React.Component {
     this.setState({ isLoadingComplete: true });
   };
 }
-const MySectionHeader = Object.assign({}, AmplifyTheme.sectionHeader, { background: 'orange' });
-const MyTheme = Object.assign({}, AmplifyTheme, { sectionHeader: MySectionHeader });
+const MySectionHeader = Object.assign({}, AmplifyTheme.sectionHeader, {
+  background: "orange"
+});
+const MyTheme = Object.assign({}, AmplifyTheme, {
+  sectionHeader: MySectionHeader
+});
 
-export default withAuthenticator(App)//, false, [], null, MyTheme );
+export default withAuthenticator(App, true, [], null, MyTheme);
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  },
+    backgroundColor: "#fff"
+  }
 });
