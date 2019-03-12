@@ -1,35 +1,35 @@
 {
 	"providers": {
 		"awscloudformation": {
-			"AuthRoleName": "testauth-20181215083138-authRole",
-			"UnauthRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-authRole",
+			"AuthRoleName": "test-expo-auth-20190312054344-authRole",
+			"UnauthRoleArn": "arn:aws:iam::002281180791:role/test-expo-auth-20190312054344-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::002281180791:role/test-expo-auth-20190312054344-authRole",
 			"Region": "us-west-2",
-			"DeploymentBucketName": "testauth-20181215083138-deployment",
-			"UnauthRoleName": "testauth-20181215083138-unauthRole",
-			"StackName": "testauth-20181215083138",
-			"StackId": "arn:aws:cloudformation:us-west-2:002281180791:stack/testauth-20181215083138/d741e6e0-0043-11e9-ab1c-067794494828"
+			"DeploymentBucketName": "test-expo-auth-20190312054344-deployment",
+			"UnauthRoleName": "test-expo-auth-20190312054344-unauthRole",
+			"StackName": "test-expo-auth-20190312054344",
+			"StackId": "arn:aws:cloudformation:us-west-2:002281180791:stack/test-expo-auth-20190312054344/cc62dbf0-4489-11e9-b3fd-0a976e703682"
 		}
 	},
 	"auth": {
-		"cognito1cb5c160": {
+		"cognitof22a4260": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/testauth-20181215083138-deployment/amplify-cfn-templates/auth/cognito1cb5c160-cloudformation-template.yml",
-				"logicalId": "authcognito1cb5c160"
+				"s3TemplateURL": "https://s3.amazonaws.com/test-expo-auth-20190312054344-deployment/amplify-cfn-templates/auth/cognitof22a4260-cloudformation-template.yml",
+				"logicalId": "authcognitof22a4260"
 			},
-			"lastPushTimeStamp": "2019-03-12T03:35:05.514Z",
+			"lastPushTimeStamp": "2019-03-12T05:48:13.349Z",
 			"output": {
-				"AppClientSecret": "11gmp2i6apf6n6ki92tu2tvin0nkpu7i88lpgo5l8cfrkv2maqed",
-				"UserPoolId": "us-west-2_IZY3taDaW",
-				"AppClientIDWeb": "1onnmq6r1na3tja1iuod2tdac2",
-				"AppClientID": "15fn35905c3shc8o5dfjd5encn",
-				"IdentityPoolId": "us-west-2:05ba5cd9-a098-4533-9f11-5bf806b522cd",
-				"IdentityPoolName": "cognito1cb5c160_identitypool_1cb5c160",
-				"UserPoolName": "cognito1cb5c160_userpool_1cb5c160"
+				"AppClientSecret": "qtfs38s3ec5v58ma8pagt09jbh6arvp97vlhh8ssu6ujqtuk1j6",
+				"UserPoolId": "us-west-2_qxy2rUVoR",
+				"AppClientIDWeb": "2g0qq8dsv17bp3nho7mpaoombc",
+				"AppClientID": "7r6m40737utu2a1pcgsgvrunvq",
+				"IdentityPoolId": "us-west-2:faf406a7-9e83-4005-999f-44a98afecbb9",
+				"IdentityPoolName": "cognitof22a4260_identitypool_f22a4260__devenv",
+				"UserPoolName": "cognitof22a4260_userpool_f22a4260"
 			},
-			"lastPushDirHash": "yAGLS1jyon/iCJEzZU7gcPDCKuc="
+			"lastPushDirHash": "VfROL3zTpevhX80of9L/RceL7SA="
 		}
 	}
 }

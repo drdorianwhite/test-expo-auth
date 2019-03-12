@@ -12,21 +12,21 @@
   },
   "dependencies": {
     "@expo/samples": "2.1.1",
-    "aws-amplify": "^1.1.17",
-    "aws-amplify-react": "^2.2.4",
-    "aws-amplify-react-native": "^2.1.5",
-    "expo": "^31.0.2",
-    "react": "16.5.0",
+    "aws-amplify": "^1.1.22",
+    "aws-amplify-react": "^2.3.2",
+    "aws-amplify-react-native": "^2.1.8",
+    "expo": "^32.0.6",
+    "react": "16.8.4",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
-    "react-native-chart-kit": "^1.2.1",
-    "react-native-fs": "^2.12.1",
+    "react-native-chart-kit": "^2.3.0",
+    "react-native-fs": "^2.13.3",
     "react-native-panel": "^1.0.4",
-    "react-native-table-component": "^1.1.8",
-    "react-navigation": "^2.18.2"
+    "react-native-table-component": "^1.2.0",
+    "react-navigation": "^3.3.2"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
-    "jest-expo": "^31.0.0"
+    "jest-expo": "^32.0.0"
   },
   "private": true
 }

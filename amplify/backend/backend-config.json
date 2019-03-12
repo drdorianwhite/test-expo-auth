@@ -1,8 +1,8 @@
 {
-    "auth": {
-        "cognito1cb5c160": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation"
-        }
-    }
+	"auth": {
+		"cognitof22a4260": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }

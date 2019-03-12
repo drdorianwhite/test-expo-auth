@@ -1,17 +1,17 @@
 {
-    "projectName": "testauth",
+    "projectName": "test-expo-auth",
+    "version": "2.0",
+    "frontend": "javascript",
     "javascript": {
         "framework": "react-native",
         "config": {
-            "SourceDir": ".",
-            "DistributionDir": ".",
+            "SourceDir": "~/cloud9env/sources/test-expo-auth/",
+            "DistributionDir": "/",
             "BuildCommand": "npm run-script build",
-            "StartCommand": "npm run-script start"
+            "StartCommand": "expo start"
         }
     },
     "providers": [
         "awscloudformation"
-    ],
-    "frontend": "javascript",
-    "version": "2.0"
+    ]
 }

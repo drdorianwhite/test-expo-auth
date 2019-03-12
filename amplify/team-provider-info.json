@@ -1,14 +1,19 @@
 {
-    "NONE": {
+    "devenv": {
         "awscloudformation": {
-            "AuthRoleName": "testauth-20181215083138-authRole",
-            "UnauthRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-authRole",
+            "AuthRoleName": "test-expo-auth-20190312054344-authRole",
+            "UnauthRoleArn": "arn:aws:iam::002281180791:role/test-expo-auth-20190312054344-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::002281180791:role/test-expo-auth-20190312054344-authRole",
             "Region": "us-west-2",
-            "DeploymentBucketName": "testauth-20181215083138-deployment",
-            "UnauthRoleName": "testauth-20181215083138-unauthRole",
-            "StackName": "testauth-20181215083138",
-            "StackId": "arn:aws:cloudformation:us-west-2:002281180791:stack/testauth-20181215083138/d741e6e0-0043-11e9-ab1c-067794494828"
+            "DeploymentBucketName": "test-expo-auth-20190312054344-deployment",
+            "UnauthRoleName": "test-expo-auth-20190312054344-unauthRole",
+            "StackName": "test-expo-auth-20190312054344",
+            "StackId": "arn:aws:cloudformation:us-west-2:002281180791:stack/test-expo-auth-20190312054344/cc62dbf0-4489-11e9-b3fd-0a976e703682"
+        },
+        "categories": {
+            "auth": {
+                "cognitof22a4260": {}
+            }
         }
     }
 }

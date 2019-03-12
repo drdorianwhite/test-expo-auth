@@ -8,7 +8,7 @@ import { withAuthenticator, AmplifyTheme } from "aws-amplify-react-native";
 
 Amplify.configure(amplify);
 
-class App extends React.Component {
+export default class App extends React.Component {
   state = {
     isLoadingComplete: false
   };
@@ -65,7 +65,7 @@ const MyTheme = Object.assign({}, AmplifyTheme, {
   sectionHeader: MySectionHeader
 });
 
-export default withAuthenticator(App, true, [], null, MyTheme);
+withAuthenticator(App, true, [], null, MyTheme);
 
 const styles = StyleSheet.create({
   container: {
