@@ -83,6 +83,24 @@
 			"Properties": {
 				"TemplateURL": "https://s3.amazonaws.com/testauth-20181215083138-deployment/amplify-cfn-templates/auth/cognito1cb5c160-cloudformation-template.yml",
 				"Parameters": {
+					"authRoleName": {
+						"Ref": "AuthRoleName"
+					},
+					"unauthRoleName": {
+						"Ref": "UnauthRoleName"
+					},
+					"authRoleArn": {
+						"Fn::GetAtt": [
+							"AuthRole",
+							"Arn"
+						]
+					},
+					"unauthRoleArn": {
+						"Fn::GetAtt": [
+							"UnauthRole",
+							"Arn"
+						]
+					},
 					"identityPoolName": "cognito1cb5c160_identitypool_1cb5c160",
 					"allowUnauthenticatedIdentities": false,
 					"thirdPartyAuth": false,
@@ -120,11 +138,10 @@
 					"userpoolClientSetAttributes": false,
 					"useDefault": "default",
 					"unAuthRoleName": "testauth-20181215083138-unauthRole",
-					"authRoleName": "testauth-20181215083138-authRole",
 					"unAuthRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-unauthRole",
-					"authRoleArn": "arn:aws:iam::002281180791:role/testauth-20181215083138-authRole",
 					"resourceName": "cognito1cb5c160",
-					"authSelections": "identityPoolAndUserPool"
+					"authSelections": "identityPoolAndUserPool",
+					"env": "NONE"
 				}
 			}
 		}

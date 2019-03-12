@@ -19,7 +19,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/testauth-20181215083138-deployment/amplify-cfn-templates/auth/cognito1cb5c160-cloudformation-template.yml",
 				"logicalId": "authcognito1cb5c160"
 			},
-			"lastPushTimeStamp": "2018-12-15T08:36:34.755Z",
+			"lastPushTimeStamp": "2019-03-12T03:35:05.514Z",
 			"output": {
 				"AppClientSecret": "11gmp2i6apf6n6ki92tu2tvin0nkpu7i88lpgo5l8cfrkv2maqed",
 				"UserPoolId": "us-west-2_IZY3taDaW",
@@ -29,7 +29,7 @@
 				"IdentityPoolName": "cognito1cb5c160_identitypool_1cb5c160",
 				"UserPoolName": "cognito1cb5c160_userpool_1cb5c160"
 			},
-			"lastPushDirHash": "t+A5bC93yxzeztz8oF1ajNxlkAY="
+			"lastPushDirHash": "yAGLS1jyon/iCJEzZU7gcPDCKuc="
 		}
 	}
 }
