@@ -1,3 +1,9 @@
+Turn servers back on in AWS for Arun
+consolidate services (free tier for now...put it all on vpn server)
+change rds to t2.micro
+
+Launch Openvpn teraform service (follow diretions)
+
 Create components:
     a) login status
     b) login
